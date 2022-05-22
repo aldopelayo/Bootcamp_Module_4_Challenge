@@ -8,24 +8,28 @@
     <link rel="stylesheet" type ="text/css" href="./assets/style.css"/>
 </head>
 <body>
-    <div id="OpeningMessage">
-        <h1>Coding Quiz Challenge</h1>
-        <article> Try to keep answer the code-related questions within your time limit. Keep in mind that incorrect answers will penaiinputze your score/time by ten seconds!</article>
-        <button id="StartQuiz">Start Quiz </button>
-    </div>
-<div class="quiz">
-    <div id="question1">
-        <h3>Commonly used data-types do not include?</h3>
-        <div class="multipleChoice">
-             <input class ="Choices" type="radio" id="an1-1" value="Strings" name="question1" for="an1-1"><label for="an1-1"><span>Strings</span></label>
-                <br>
-            <input class ="Choices" type ="radio" id="an1-2" value="Booleans" name="question1" for="an1-2"><label for="an1-2"><span>Booleans</span></label>
-                <br>
-            <input class ="Choices" type="radio" id="an1-3" value="Alerts" name="question1" for="an1-3"><label for="an1-3"><span>Alerts</span></label>
-                <br>
-            <input class ="Choices" type="radio" id="an1-4" value="Numbers" name="question1" for="an1-4"><label for="an1-4"><span>Numbers</span></label>
+    <div id="container">
+        <div id="timer">
+            <p id="timerText">60</p>
         </div>
-    </div>
+            <div id="OpeningMessage">
+             <h1>Coding Quiz Challenge</h1>
+             <article> Try to keep answer the code-related questions within your time limit. Keep in mind that incorrect answers will penaiinputze your score/time by ten seconds!</article>
+                <button id="StartQuiz">Start Quiz </button>
+            </div>
+        <div class="quiz">
+        <div id="question1">
+        <h3>Commonly used data-types do not include?</h3>
+            <div class="multipleChoice">
+                <input class ="Choices" type="radio" id="an1-1" value="Strings" name="question1" for="an1-1"><label for="an1-1"><span>Strings</span></label>
+                    <br>
+                <input class ="Choices" type ="radio" id="an1-2" value="Booleans" name="question1" for="an1-2"><label for="an1-2"><span>Booleans</span></label>
+                    <br>
+                <input class ="Choices" type="radio" id="an1-3" value="Alerts" name="question1" for="an1-3"><label for="an1-3"><span>Alerts</span></label>
+                    <br>
+                <input class ="Choices" type="radio" id="an1-4" value="Numbers" name="question1" for="an1-4"><label for="an1-4"><span>Numbers</span></label>
+            </div>
+        </div>
     <div id="question2">
        <h3>The condition in an if/else statement is enclosed within ____.</h3>
        <div class="multipleChoice">
@@ -74,7 +78,7 @@
             <input type="radio" id="an5-4" value="console.log" name="question5" for="an5-4"><label for="an5-4"><span>console.log</span></label>
         </div>
     </div>
-    <div id="question6">
+     <div id="question6">
         <h3>Commonly used data types DO Not Include:</h3>
         <div class="multipleChoice">
             <input type="radio" id="an6-1" value="Strings" name="question6" for="an6-1"><label for="an6-1"><span>Strings</span></label>
@@ -84,17 +88,19 @@
             <input type="radio" id="an6-3" value="Alerts" name="question6" for="an6-3"><label for="an6-3"><span>Alerts</span></label>
             <br>
             <input type="radio" id="an6-4" value="Numbers" name="question6" for="an6-4"><label for="an6-4"><span>Numbers</span></label>
-        </div>
+         </div>
     </div>
-</div>
-<div id="Submit">
+    </div>
+    
+    <div id="Submit">
     <h3>All Done!!!</h3>
         <span>your final score is:</span>
         <br>
         <span>Enter initials: </span> <input type="text" for="name" id="name"> <button id="submitBtn">Submit</button>
-</div>
-<div id="scorecard">
+    </div>    
+    <div id="scorecard">
 
+    </div>
 </div>
 <script src="assets\script.js" >
 
