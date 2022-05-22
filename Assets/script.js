@@ -4,7 +4,14 @@ const FirstPanel = document.querySelector('#OpeningMessage');
 
 
 //lets make the start button commence things
-function Startgame()
+StartBtn.addEventListener('click', () =>{
+    if(FirstPanel.style.display === 'none') {
+        FirstPanel.style.display = 'block';
+    } else{
+        FirstPanel.style.display='none';
+     }
+});
+
 
 //lets go to our new question
 function NextQuestion(){
