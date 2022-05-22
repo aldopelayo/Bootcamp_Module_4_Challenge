@@ -1,7 +1,11 @@
-//lets make the start button commence things
-function Startgame(){
+//variables
+const StartBtn = document.querySelector('#StartQuiz');
+const FirstPanel = document.querySelector('#OpeningMessage');
 
-}
+
+//lets make the start button commence things
+function Startgame()
+
 //lets go to our new question
 function NextQuestion(){
 
