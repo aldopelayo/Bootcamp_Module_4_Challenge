@@ -9,14 +9,17 @@
 </head>
 <body>
     <div id="container">
-        <div id="timer">
-            <p id="timerText">60</p>
-        </div>
-            <div id="OpeningMessage">
+        <div id="OpeningMessage">
+            <div id="StartQuiz">
              <h1>Coding Quiz Challenge</h1>
              <article> Try to keep answer the code-related questions within your time limit. Keep in mind that incorrect answers will penaiinputze your score/time by ten seconds!</article>
-                <button id="StartQuiz">Start Quiz </button>
-            </div>
+            
+            <button id="StartBtn" onclick="timer()">Start Quiz </button>
+        </div>
+            
+        
+        </div>
+        <div id="timerText"></div>
         <div class="quiz">
         <div id="question1">
         <h3>Commonly used data-types do not include?</h3>
