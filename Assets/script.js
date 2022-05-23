@@ -4,6 +4,7 @@ const FirstPanel = document.querySelector('#OpeningMessage');
 
 var secs =60
 
+
 //lets make the start button commence things
 
 StartBtn.addEventListener('click', () =>{
@@ -17,6 +18,7 @@ StartBtn.addEventListener('click', () =>{
 });
 
 
+
 //lets make a timer
 function timer() {
     var element =document.getElementById("timerText");
@@ -28,19 +30,18 @@ function timer() {
     }
     
 }
-//     StartBtn.addEventListener('click',()=>{
-    
-//     c= c - 1;
-//     if (c<60) {
-//         timerText.innerHTML = c;
-//     }
-//     if(C<1){
-//         Window.ClearInterval(update);
-//     }
-//     }
-// )
-//     c=60;
-//     update=setInterval("Timer1()",1000);
+
+
+
+
+
+//logic to our right answers and wrong answers
+document.querySelector('input[name="question1"]:checked'.value)
+document.querySelector('input[name="question2"]:checked'.value)
+document.querySelector('input[name="question3"]:checked'.value)
+document.querySelector('input[name="question4"]:checked'.value)
+document.querySelector('input[name="question5"]:checked'.value)
+document.querySelector('input[name="question6"]:checked'.value)
 
 //lets go to our new question
         $("#question1").click(function(){
@@ -66,19 +67,16 @@ $("#question5").click(function(){
 $("#question6").click(function(){
     $("#question6").hide();
 });
-//next we can show the submit score card !
-
-
-//logic to our right answers and wrong answers
-function AnswerTracker(){
-
-}
 
 //lets see our final score
 
-function submitscore (){
-
+function scanAnswers(){
+    var c=0;
+    var q1=document.input.question1.value
+    if (q1=="Alerts"){c++}
+        console.log("im working")
 }
+//next we can show the submit score card !
 
 //lets compare our score to others
 

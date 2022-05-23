@@ -15,14 +15,6 @@
       font-weight: bold;
       background-color: plum;
   }
-  .multipleChoice{
-      width: 800px;
-      max-width: 80%;
-      background-color: grey 50%;
-      border-radius: 5px;
-      padding:10px;
-      box-shadow: 0 0 9px 1px;
-  }
   span{
       color: black;
   }
@@ -42,7 +34,12 @@
         padding: 10px 50px ;
         display: flex;
         align-items: center;
-
+        width: 800px;
+        max-width: 80%;
+        background-color: grey 50%;
+        border-radius: 5px;
+        padding:10px;
+        box-shadow: 0 0 9px 1px;
     }
 
         label:before{
