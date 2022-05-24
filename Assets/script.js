@@ -1,7 +1,6 @@
 //variables
 var StartBtn = document.querySelector('#StartQuiz');
 const FirstPanel = document.querySelector('#OpeningMessage');
-const  UserInitial = document.getElementById('#Username');
 var secs =60
 
 //lets make the start button commence things
@@ -88,9 +87,26 @@ function scanAnswers()
 
 }
 // next we can show the submit score card !
-function ScoreCard(){
 
-}
+ function Usernames(){
+     let UserInitial = Usernames.textContent
+     document.getElementById('username').innerHTML=Usernames
+ 
+var highscore =(localStorage.setItem("highscore",JSON.stringify)) || [];
+console.log(highscore)
+
+UserInitial.addEventListener("keyup",()=>{
+    Username.disabled=!UserInitial.value;
+});
+pushHighScore=e=>{
+    e.preventDefault();
+    var PlayerReport={
+        score:FinalScore,
+        name:Username.value
+    };
+    highscore.push(PlayerReport);
+    console.log(highscore);
+};
+};
 //lets compare our score to others
-
 // function scoreboard ()
