@@ -27,7 +27,6 @@ function timer() {
         secs=60;
         element.innerHTML='<h2>Times up!</h2>';
     }
-    
 }
 
 
@@ -38,29 +37,29 @@ function timer() {
 
 
 // lets go to our new question
-//         $("#mc1").click(function(){
-//             $("#mc1").hide();
-//             $("#mc2").show();
-// });
-// $("#mc2").click(function(){
-//     $("#mc2").hide();
-//     $("#mc3").show();
-// });
-// $("#mc3").click(function(){
-//     $("#mc3").hide();
-//     $("#mc4").show();
-// });
-// $("#mc4").click(function(){
-//     $("#mc4").hide();
-//     $("#mc5").show();
-// });
-// $("#mc5").click(function(){
-//     $("#mc5").hide();
-//     $("#mc6").show();
-// });
-// $("#mc6").click(function(){
-//     $("#mc6").hide();
-// });
+        $("#mc1").click(function(){
+            $("#mc1").hide();
+            $("#mc2").show();
+});
+$("#mc2").click(function(){
+    $("#mc2").hide();
+    $("#mc3").show();
+});
+$("#mc3").click(function(){
+    $("#mc3").hide();
+    $("#mc4").show();
+});
+$("#mc4").click(function(){
+    $("#mc4").hide();
+    $("#mc5").show();
+});
+$("#mc5").click(function(){
+    $("#mc5").hide();
+    $("#mc6").show();
+});
+$("#mc6").click(function(){
+    $("#mc6").hide();
+});
 
 //lets see our final score
 
