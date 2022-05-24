@@ -15,6 +15,9 @@
       font-weight: bold;
       background-color: plum;
   }
+  #FinalScore{
+      font-weight: bolder
+  }
   span{
       color: black;
   }
@@ -22,9 +25,7 @@
     h3{
         font-size: large;
     }
-    input[type="radio"]{
-        display: none;
-    }
+
     label{
         position: relative;
         color: plum;

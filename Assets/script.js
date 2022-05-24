@@ -1,7 +1,6 @@
 //variables
 var StartBtn = document.querySelector('#StartQuiz');
 const FirstPanel = document.querySelector('#OpeningMessage');
-
 var secs =60
 
 
@@ -36,50 +35,61 @@ function timer() {
 
 
 //logic to our right answers and wrong answers
-document.querySelector('input[name="question1"]:checked'.value)
-document.querySelector('input[name="question2"]:checked'.value)
-document.querySelector('input[name="question3"]:checked'.value)
-document.querySelector('input[name="question4"]:checked'.value)
-document.querySelector('input[name="question5"]:checked'.value)
-document.querySelector('input[name="question6"]:checked'.value)
 
-//lets go to our new question
-        $("#question1").click(function(){
-            $("#question1").hide();
-            $("#question2").show();
-});
-$("#question2").click(function(){
-    $("#question2").hide();
-    $("#question3").show();
-});
-$("#question3").click(function(){
-    $("#question3").hide();
-    $("#question4").show();
-});
-$("#question4").click(function(){
-    $("#question4").hide();
-    $("#question5").show();
-});
-$("#question5").click(function(){
-    $("#question5").hide();
-    $("#question6").show();
-});
-$("#question6").click(function(){
-    $("#question6").hide();
-});
+
+// lets go to our new question
+//         $("#mc1").click(function(){
+//             $("#mc1").hide();
+//             $("#mc2").show();
+// });
+// $("#mc2").click(function(){
+//     $("#mc2").hide();
+//     $("#mc3").show();
+// });
+// $("#mc3").click(function(){
+//     $("#mc3").hide();
+//     $("#mc4").show();
+// });
+// $("#mc4").click(function(){
+//     $("#mc4").hide();
+//     $("#mc5").show();
+// });
+// $("#mc5").click(function(){
+//     $("#mc5").hide();
+//     $("#mc6").show();
+// });
+// $("#mc6").click(function(){
+//     $("#mc6").hide();
+// });
 
 //lets see our final score
 
-function scanAnswers(){
-    var c=0;
-    var q1=document.input.question1.value
-    if (q1=="Alerts"){c++}
-        console.log("im working")
+function scanAnswers()
+{
+    var right =0;
+    var q1=document.quiz.question1.value;
+    var q2=document.quiz.question2.value;
+    var q3=document.quiz.question3.value;
+    var q4=document.quiz.question4.value;
+    var q5=document.quiz.question5.value;
+    var q6=document.quiz.question6.value;
+
+    
+
+    if (q1=="Alerts")(right++)
+    if (q2=="parenthesis"){right++}
+    if (q3=="numbers and strings"){right++}
+    if (q4=="quotes"){right++}
+    if (q5=="console.log"){right++}
+    if (q6=="Alerts"){right++}
+    let FinalScore=parseInt(right)
+    document.getElementById('FinalScore').innerHTML=FinalScore
+
+
+
 }
-//next we can show the submit score card !
+// next we can show the submit score card !
 
 //lets compare our score to others
 
-function scoreboard (){
-
-}
+// function scoreboard ()
