@@ -1,8 +1,8 @@
 //variables
 var StartBtn = document.querySelector('#StartQuiz');
 const FirstPanel = document.querySelector('#OpeningMessage');
+const  UserInitial = document.getElementById('#Username');
 var secs =60
-
 
 //lets make the start button commence things
 
@@ -88,7 +88,9 @@ function scanAnswers()
 
 }
 // next we can show the submit score card !
+function ScoreCard(){
 
+}
 //lets compare our score to others
 
 // function scoreboard ()
